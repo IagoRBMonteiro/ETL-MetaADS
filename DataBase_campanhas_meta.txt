@@ -1,0 +1,16 @@
+-> Criamos o DataBase
+	CREATE DATASE campanhas_meta
+
+-> Criando a tabela principal
+
+    CREATE TABLE campanhas_meta (
+    ad_id VARCHAR(255) NOT NULL,
+    date DATE NOT NULL,
+    impressions INT,
+    clicks INT,
+    cost FLOAT,
+    conversions INT,
+    ctr FLOAT,
+    cost_per_conversion FLOAT,
+    PRIMARY KEY (ad_id, date)
+);
